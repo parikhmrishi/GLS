@@ -1,0 +1,17 @@
+.button-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid #000;
+  padding: 4rem 3rem;
+}
+
+.banner {
+  height: 100vh;
+  background-position: center;
+  background-image: url("../../static/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
