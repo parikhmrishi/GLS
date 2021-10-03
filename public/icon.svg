@@ -2,7 +2,7 @@
 <path d="M68 85C68 85 103.5 97 134 77.5" stroke="#9B0000" stroke-width="2" stroke-linecap="round"/>
 <path d="M1 94C42.6934 75.4226 68 101.5 107 92.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M16.4083 38.3494C15.2206 39.5046 15.1942 41.4039 16.3494 42.5917C17.5046 43.7794 19.4039 43.8058 20.5917 42.6506L16.4083 38.3494ZM55 5L57.0348 2.79559L54.9461 0.86751L52.9083 2.84942L55 5ZM78.9652 31.2044C80.1826 32.3282 82.0806 32.2523 83.2044 31.0348C84.3282 29.8174 84.2523 27.9194 83.0348 26.7956L78.9652 31.2044ZM20.5917 42.6506L57.0917 7.15058L52.9083 2.84942L16.4083 38.3494L20.5917 42.6506ZM52.9652 7.20441L78.9652 31.2044L83.0348 26.7956L57.0348 2.79559L52.9652 7.20441Z" fill="black"/>
-<path d="M25.5 44V86.5" stroke="#9B0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 44V86.5" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M130 49L130 76" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M75.5 44L105 18L133.5 44" stroke="#9B0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="45" y="44" width="6.25" height="6.25" fill="black"/>
