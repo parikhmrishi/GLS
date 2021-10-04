@@ -4,23 +4,57 @@
   background-image: url("../../static/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+h2 {
+  padding: 1rem 0px !important;
+  margin: 2px 2px !important;
+}
+
+li {
+  padding: 10px 0px;
+}
+
+.b-black-1 {
+  border: 1px solid black;
+}
+.b-black-2 {
+  border: 2px solid black;
 }
 
 .container {
+  padding: 0 !important;
+}
+
+.top-banner {
   position: absolute;
-  top: 50%;
+  top: 5rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
   width: 80%;
-  padding: 20px;
   text-align: center;
-  display: flex;
-  justify-content: center;
+}
+
+.description {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+.next-button {
+  position: absolute;
+  top: 35rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
 }
 
 .card {
-  width: 20rem;
+  width: 80%;
 }
