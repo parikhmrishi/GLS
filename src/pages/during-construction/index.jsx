@@ -10,10 +10,13 @@ const DuringConstruction = () => {
           <hr />
           <div className="content">
             <ul type="none">
-              <li>Earthwork</li>
-              <li>Masonary</li>
-              <li>Rcc work</li>
-              <li>Sanitary and water supply</li>
+              <li className="btn btn-primary">Earthwork</li>
+              <br />
+              <li className="btn btn-primary">Masonary</li>
+              <br />
+              <li className="btn btn-primary">Rcc work</li>
+              <br />
+              <li className="btn btn-primary">Sanitary and water supply</li>
             </ul>
           </div>
         </div>

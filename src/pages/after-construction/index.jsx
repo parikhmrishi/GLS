@@ -10,8 +10,9 @@ const AfterConstruction = () => {
           <hr />
           <div className="content">
             <ul type="none">
-              <li>Defect Mitigation</li>
-              <li>Root cause of Defects</li>
+              <li className="btn btn-primary">Defect Mitigation</li>
+              <br />
+              <li className="btn btn-primary">Root cause of Defects</li>
             </ul>
           </div>
         </div>

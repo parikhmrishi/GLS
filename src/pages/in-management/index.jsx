@@ -11,11 +11,19 @@ const InManagement = () => {
 
           <div className="content">
             <ul type="none">
-              <li>Type of Quality System</li>
-              <li>Bridge between time and quality</li>
-              <li>Quality management tool</li>
-              <li>Problem with implementing Quality Management</li>
-              <li>Importance of Commitment</li>
+              <li className="btn btn-primary">Type of Quality System</li>
+              <br />
+              <li className="btn btn-primary">
+                Bridge between time and quality
+              </li>
+              <br />
+              <li className="btn btn-primary">Quality management tool</li>
+              <br />
+              <li className="btn btn-primary">
+                Problem with implementing Quality Management
+              </li>
+              <br />
+              <li className="btn btn-primary">Importance of Commitment</li>
             </ul>
           </div>
         </div>
