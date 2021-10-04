@@ -10,21 +10,25 @@ const Procurement = () => {
           <hr />
           <div className="content">
             <ul type="none">
-              <li className="btn btn-primary">Type of payment</li>
+              <li className="btn btn-primary">
+                Type of payment while procurement
+              </li>
               <br />
-              <li className="btn btn-primary">Quality</li>
+              <li className="btn btn-primary">Quality checks</li>
               <br />
-              <li className="btn btn-primary">Performance evaluation</li>
+              <li className="btn btn-primary">
+                Performance evaluation of vendor
+              </li>
               <br />
-              <li className="btn btn-primary">Possible choices</li>
+              <li className="btn btn-primary">
+                Preference while procurement (Speed, Cost, Quality)
+              </li>
               <br />
-              <li className="btn btn-primary">Innovation</li>
+              <li className="btn btn-primary">Innovation barriers</li>
               <br />
               <li className="btn btn-primary">Environmental impact</li>
               <br />
-              <li className="btn btn-primary">
-                Supplier/Sub-contractor selection
-              </li>
+              <li className="btn btn-primary">Supplier selection criteria</li>
             </ul>
           </div>
         </div>
