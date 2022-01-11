@@ -2,13 +2,13 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./index.css";
 
-const DuringConstruction = () => {
+const RCCBooklet = () => {
   const history = useHistory();
   return (
     <>
       <div className="container align-center height-80vh mt-5">
         <div className="neu-card ">
-          <div className="header">During construction</div>
+          <div className="header">RCC Booklet</div>
           <hr />
           <div className="content">
             <ul type="none">
@@ -16,45 +16,55 @@ const DuringConstruction = () => {
                 className="btn btn-secondary"
                 onClick={() =>
                   history.push(
-                    "/selection/during-construction/quality-parameter"
+                    "/selection/during-construction/rcc-state/rcc-booklet/formwork"
                   )
                 }
               >
-                What are the quality parameters your company follows for masonry
-                work?
+                Formwork
               </li>
               <br />
               <li
                 className="btn btn-secondary"
                 onClick={() =>
                   history.push(
-                    "/selection/during-construction/standard-procedures"
+                    "/selection/during-construction/rcc-state/rcc-booklet/reinforcement"
                   )
                 }
               >
-                What are the standard procedures your company follows in Earth
-                work excavation stage?
-              </li>
-              <br />
-              <li
-                className="btn btn-secondary"
-                onClick={() =>
-                  history.push("/selection/during-construction/rcc-state")
-                }
-              >
-                What are the parameters your company follows for RCC stage?
+                Reinforcement
               </li>
               <br />
               <li
                 className="btn btn-secondary"
                 onClick={() =>
                   history.push(
-                    "/selection/during-construction/quality-standards"
+                    "/selection/during-construction/rcc-state/rcc-booklet/pre-c"
                   )
                 }
               >
-                What quality standards does your organization adhere to when
-                installing sanitary and water supply services?
+                Pre-Concreting checking.
+              </li>
+              <br />
+              <li
+                className="btn btn-secondary"
+                onClick={() =>
+                  history.push(
+                    "/selection/during-construction/rcc-state/rcc-booklet/during-c"
+                  )
+                }
+              >
+                Checking during concreting
+              </li>
+              <br />
+              <li
+                className="btn btn-secondary"
+                onClick={() =>
+                  history.push(
+                    "/selection/during-construction/rcc-state/rcc-booklet/post-c"
+                  )
+                }
+              >
+                Post-concreting checking
               </li>
               <br />
             </ul>
@@ -65,4 +75,4 @@ const DuringConstruction = () => {
   );
 };
 
-export default DuringConstruction;
+export default RCCBooklet;
