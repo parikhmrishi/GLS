@@ -6,6 +6,10 @@ import Procurement from "./pages/procurememt";
 import AfterConstruction from "./pages/after-construction";
 import DuringConstruction from "./pages/during-construction";
 import InManagement from "./pages/in-management";
+import Ponding from "./pages/ponding";
+import Cracks from "./pages/cracks";
+import Peeling from "./pages/peeling";
+import Efflorescence from "./pages/efflorescence";
 
 function App() {
   return (
@@ -18,7 +22,30 @@ function App() {
           <Route
             path="/selection/after-construction"
             component={AfterConstruction}
-          />
+          >
+            <Route
+              exact
+              path="/selection/after-construction"
+              component={AfterConstruction}
+            ></Route>
+            <Route
+              path="/selection/after-construction/ponding"
+              component={Ponding}
+            />
+            <Route
+              path="/selection/after-construction/cracks"
+              component={Cracks}
+            />
+            <Route
+              path="/selection/after-construction/peeling"
+              component={Peeling}
+            />
+            <Route
+              path="/selection/after-construction/efflorescence"
+              component={Efflorescence}
+            />
+          </Route>
+
           <Route
             path="/selection/during-construction"
             component={DuringConstruction}

@@ -22,10 +22,21 @@ body {
   text-align: center;
 }
 
+.text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .align-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.height-80vh {
+  height: 80vh;
 }
 
 .height-80vh {
