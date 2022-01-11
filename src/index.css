@@ -29,6 +29,11 @@ body {
   transform: translateY(-50%);
 }
 
+.list {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 .align-center {
   display: flex;
   align-items: center;
@@ -39,8 +44,8 @@ body {
   height: 80vh;
 }
 
-.height-80vh {
-  height: 80vh;
+.height-90vh {
+  height: 90vh;
 }
 
 .neu-card {

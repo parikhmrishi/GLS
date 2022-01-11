@@ -2,52 +2,58 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./index.css";
 
-const InManagement = () => {
+const QualityManagement = () => {
   const history = useHistory();
   return (
     <>
       <div className="container align-center height-80vh mt-5">
         <div className="neu-card ">
-          <div className="header">In management</div>
+          <div className="header">Quality management tool to be adopted</div>
           <hr />
           <div className="content">
             <ul type="none">
               <li
                 className="btn btn-secondary"
                 onClick={() =>
-                  history.push("/selection/in-management/quality-system")
+                  history.push(
+                    "/selection/in-management/quality-management/tools-useful"
+                  )
                 }
               >
-                Quality system for the organizations to follow
+                Tools Useful in Both Quality Planning and Control Quality
               </li>
               <br />
               <li
                 className="btn btn-secondary"
                 onClick={() =>
-                  history.push("/selection/in-management/quality-management")
+                  history.push(
+                    "/selection/in-management/quality-management/quality-planning"
+                  )
                 }
               >
-                Quality management tool to be adopted
+                Quality Planning Tools and Techniques
               </li>
               <br />
               <li
                 className="btn btn-secondary"
                 onClick={() =>
-                  history.push("/selection/in-management/problems-encountered")
+                  history.push(
+                    "/selection/in-management/quality-management/tools-use"
+                  )
                 }
               >
-                Problems encountered in relation with implementation of Quality
-                Management
+                Tools Useful in Both Quality Planning and Control Quality
               </li>
               <br />
               <li
                 className="btn btn-secondary"
                 onClick={() =>
-                  history.push("/selection/in-management/perceived-commitment")
+                  history.push(
+                    "/selection/in-management/quality-management/tools-technique"
+                  )
                 }
               >
-                Perceived commitment of your organization towards Quality
-                Management?
+                Tools and Techniques of the Perform Quality Assurance Process
               </li>
               <br />
             </ul>
@@ -58,4 +64,4 @@ const InManagement = () => {
   );
 };
 
-export default InManagement;
+export default QualityManagement;
