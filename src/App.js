@@ -72,6 +72,24 @@ import Revising from "./pages/revising";
 import Proper from "./pages/proper";
 import Basis from "./pages/basis";
 import Speed from "./pages/speed";
+import Cost from "./pages/cost";
+import Types from "./pages/types";
+import Reduce from "./pages/reduce";
+import Avoid from "./pages/avoid";
+import Leverage from "./pages/leverage";
+import Oversee from "./pages/oversee";
+import Review from "./pages/review";
+import BQuality from "./pages/bquality";
+import Include from "./pages/include";
+import Risk from "./pages/risk";
+import RTypes from "./pages/rtypes";
+import RPrice from "./pages/rprice";
+import RSupply from "./pages/rsupply";
+import RComplex from "./pages/rcomplex";
+import RFraud from "./pages/rfraud";
+import RPoor from "./pages/rpoor";
+import ROverspending from "./pages/roverspending";
+import RInaccurate from "./pages/rinaccurate";
 
 function App() {
   return (
@@ -177,18 +195,102 @@ function App() {
                 path="/selection/procurement/basis/speed"
                 component={Speed}
               />
-              <Route
-                path="/selection/procurement/basis/cost"
-                component={Basis}
-              />
+              <Route path="/selection/procurement/basis/cost" component={Cost}>
+                <Route
+                  exact
+                  path="/selection/procurement/basis/cost"
+                  component={Cost}
+                />
+                <Route
+                  path="/selection/procurement/basis/cost/types"
+                  component={Types}
+                />
+                <Route
+                  path="/selection/procurement/basis/cost/reduce"
+                  component={Reduce}
+                >
+                  <Route
+                    exact
+                    path="/selection/procurement/basis/cost/reduce"
+                    component={Reduce}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/cost/reduce/avoid"
+                    component={Avoid}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/cost/reduce/leverage"
+                    component={Leverage}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/cost/reduce/oversee"
+                    component={Oversee}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/cost/reduce/review"
+                    component={Review}
+                  />
+                </Route>
+              </Route>
               <Route
                 path="/selection/procurement/basis/bquality"
-                component={Basis}
-              />
-              <Route
-                path="/selection/procurement/basis/risk"
-                component={Basis}
-              />
+                component={BQuality}
+              >
+                <Route
+                  exact
+                  path="/selection/procurement/basis/bquality"
+                  component={BQuality}
+                />
+                <Route
+                  path="/selection/procurement/basis/bquality/include"
+                  component={Include}
+                />
+              </Route>
+              <Route path="/selection/procurement/basis/risk" component={Risk}>
+                <Route
+                  exact
+                  path="/selection/procurement/basis/risk"
+                  component={Risk}
+                />
+                <Route
+                  path="/selection/procurement/basis/risk/rtypes"
+                  component={RTypes}
+                >
+                  <Route
+                    exact
+                    path="/selection/procurement/basis/risk/rtypes"
+                    component={RTypes}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rprice"
+                    component={RPrice}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rsupply"
+                    component={RSupply}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rcomplex"
+                    component={RComplex}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rfraud"
+                    component={RFraud}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rpoor"
+                    component={RPoor}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/roverspending"
+                    component={ROverspending}
+                  />
+                  <Route
+                    path="/selection/procurement/basis/risk/rtypes/rinaccurate"
+                    component={RInaccurate}
+                  />
+                </Route>
+              </Route>
             </Route>
             <Route path="/selection/procurement/checks" component={Checks}>
               <Route
