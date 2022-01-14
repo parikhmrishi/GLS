@@ -47,6 +47,31 @@ import Reinforcement from "./pages/reinforcement";
 import PreC from "./pages/pre-c";
 import DuringC from "./pages/during-c";
 import PostC from "./pages/post-c";
+import Factors from "./pages/factors";
+import Preservation from "./pages/preservation";
+import Pollution from "./pages/pollution";
+import Consumption from "./pages/consumption";
+import Traffic from "./pages/traffic";
+import Sustainable from "./pages/sustainable";
+import Barriers from "./pages/barriers";
+import Payment from "./pages/payment";
+import Letter from "./pages/letter";
+import Open from "./pages/open";
+import Consignment from "./pages/consignment";
+import Cash from "./pages/cash";
+import Parameters from "./pages/parameters";
+import Quality from "./pages/quality";
+import Price from "./pages/price";
+import Complaint from "./pages/complaint";
+import Guarantees from "./pages/guarantees";
+import Checks from "./pages/checks";
+import Testing from "./pages/testing";
+import Insisting from "./pages/insisting";
+import Frequent from "./pages/frequent";
+import Revising from "./pages/revising";
+import Proper from "./pages/proper";
+import Basis from "./pages/basis";
+import Speed from "./pages/speed";
 
 function App() {
   return (
@@ -55,7 +80,144 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/selection" component={Selection}>
           <Route exact path="/selection" component={Selection} />
-          <Route path="/selection/procurement" component={Procurement} />
+          {/* Procurement */}
+          <Route path="/selection/procurement" component={Procurement}>
+            <Route
+              exact
+              path="/selection/procurement"
+              component={Procurement}
+            />
+            <Route path="/selection/procurement/factors" component={Factors}>
+              <Route
+                exact
+                path="/selection/procurement/factors"
+                component={Factors}
+              />
+              <Route
+                path="/selection/procurement/factors/preservation"
+                component={Preservation}
+              />
+              <Route
+                path="/selection/procurement/factors/pollution"
+                component={Pollution}
+              />
+              <Route
+                path="/selection/procurement/factors/consumption"
+                component={Consumption}
+              />
+              <Route
+                path="/selection/procurement/factors/traffic"
+                component={Traffic}
+              />
+              <Route
+                path="/selection/procurement/factors/sustainable"
+                component={Sustainable}
+              />
+            </Route>
+            <Route
+              path="/selection/procurement/barriers"
+              component={Barriers}
+            />
+            <Route path="/selection/procurement/payment" component={Payment}>
+              <Route
+                exact
+                path="/selection/procurement/payment"
+                component={Payment}
+              />
+              <Route
+                path="/selection/procurement/payment/letter"
+                component={Letter}
+              />
+              <Route
+                path="/selection/procurement/payment/open"
+                component={Open}
+              />
+              <Route
+                path="/selection/procurement/payment/consignment"
+                component={Consignment}
+              />
+              <Route
+                path="/selection/procurement/payment/cash"
+                component={Cash}
+              />
+            </Route>
+            <Route
+              path="/selection/procurement/parameters"
+              component={Parameters}
+            >
+              <Route
+                exact
+                path="/selection/procurement/parameters"
+                component={Parameters}
+              />
+              <Route
+                path="/selection/procurement/parameters/quality"
+                component={Quality}
+              />
+              <Route
+                path="/selection/procurement/parameters/price"
+                component={Price}
+              />
+              <Route
+                path="/selection/procurement/parameters/complaint"
+                component={Complaint}
+              />
+              <Route
+                path="/selection/procurement/parameters/guarantees"
+                component={Guarantees}
+              />
+            </Route>
+            <Route path="/selection/procurement/basis" component={Basis}>
+              <Route
+                exact
+                path="/selection/procurement/basis"
+                component={Basis}
+              />
+              <Route
+                path="/selection/procurement/basis/speed"
+                component={Speed}
+              />
+              <Route
+                path="/selection/procurement/basis/cost"
+                component={Basis}
+              />
+              <Route
+                path="/selection/procurement/basis/bquality"
+                component={Basis}
+              />
+              <Route
+                path="/selection/procurement/basis/risk"
+                component={Basis}
+              />
+            </Route>
+            <Route path="/selection/procurement/checks" component={Checks}>
+              <Route
+                exact
+                path="/selection/procurement/checks"
+                component={Checks}
+              />
+              <Route
+                path="/selection/procurement/checks/testing"
+                component={Testing}
+              />
+              <Route
+                path="/selection/procurement/checks/insisting"
+                component={Insisting}
+              />
+              <Route
+                path="/selection/procurement/checks/frequent"
+                component={Frequent}
+              />
+              <Route
+                path="/selection/procurement/checks/revising"
+                component={Revising}
+              />
+              <Route
+                path="/selection/procurement/checks/proper"
+                component={Proper}
+              />
+            </Route>
+          </Route>
           {/* After construction */}
           <Route
             path="/selection/after-construction"
@@ -65,7 +227,7 @@ function App() {
               exact
               path="/selection/after-construction"
               component={AfterConstruction}
-            ></Route>
+            />
             <Route
               path="/selection/after-construction/ponding"
               component={Ponding}
