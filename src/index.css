@@ -23,7 +23,7 @@ body {
 }
 
 .text {
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

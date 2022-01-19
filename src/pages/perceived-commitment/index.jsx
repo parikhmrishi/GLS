@@ -7,10 +7,10 @@ const PerceivedCommitment = () => {
       <div className="container align-center height-90vh mt-5">
         <div className="neu-card ">
           <div className="text">
-            <em>
+            <b>
               According to employee their organization sets quality policies.
               This can be improved by-
-            </em>
+            </b>
             <ul>
               <li>
                 Communicate the importance of meeting customer requirements
@@ -24,11 +24,11 @@ const PerceivedCommitment = () => {
                 Invest in resources that are required to enhance the quality.
               </li>
             </ul>
-            <em>
+            <b>
               Set up a formal Quality Management system. Quality management
               systems should address an organization’s unique needs; however,
               the elements all systems have in common include:
-            </em>
+            </b>
             <ul>
               <li>The organization’s quality policy and quality objectives</li>
               <li>Quality manual</li>
